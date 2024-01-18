@@ -1,0 +1,270 @@
+/* Basic Styling */
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: sans-serif;
+   margin: 20px;
+   padding: 0;
+}
+
+h1 {
+   background-color: #000;
+   background-image: none;
+   border: 1px solid #000;
+   border-radius: 4px;
+   box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+   box-sizing: border-box;
+   color: #fff;
+   cursor: pointer;
+   display: inline-block;
+   font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+   font-size: 13px;
+   font-weight: 600;
+   line-height: 20px;
+   margin: 10px 0px 20px 0px;
+   overflow: visible;
+   padding: 8px 8px;
+   text-align: center;
+   width: 95px;
+}
+
+h2 {
+   margin-top: 0;
+   font-size: 20px;
+}
+
+h3 {
+   margin-top: 0;
+   font-size: 18px;
+}
+
+h4 {
+   margin-top: 0;
+   font-size: 16px;
+}
+
+h5 {
+   margin-top: 0;
+   font-size: 14px;
+}
+
+h6 {
+   margin-top: 0;
+   font-size: 12px;
+}
+
+code {
+   font-size: 1.2em;
+}
+
+ul {
+   padding-inline-start: 20px;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+
+/* Board Components */
+.game {
+   display: flex;
+   flex-direction: row;
+}
+
+.game-info {
+   margin-left: 20px;
+}
+
+.square {
+   background: #fff;
+   border: 1px solid #999;
+   float: left;
+   font-size: 24px;
+   font-weight: bold;
+   line-height: 34px;
+   height: 34px;
+   margin-right: -1px;
+   margin-top: -1px;
+   padding: 0;
+   text-align: center;
+   width: 34px;
+}
+
+.squareWin {
+   color: white;
+   -webkit-text-stroke: 2px black;
+   -webkit-text-stroke: .8px black;
+   background-image: linear-gradient(to right top, #1e9c91, #0fa694, #00af96, #00b997, #00c296, #0bca9d, #15d2a5, #1cdaac, #2ae3be, #3aebd0, #4cf3e1, #5ffbf1);
+   border: 1px solid #999;
+   float: left;
+   font-size: 24px;
+   font-weight: bold;
+   line-height: 34px;
+   height: 34px;
+   margin-right: -1px;
+   margin-top: -1px;
+   padding: 0;
+   text-align: center;
+   width: 34px;
+} 
+
+.board-row:after {
+   clear: both;
+   content: '';
+   display: table;
+}
+
+
+/* Next Player Status Display */   
+.status {
+   background-color: #000;
+   background-image: none;
+   border: 1px solid #000;
+   border-radius: 4px;
+   box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+   box-sizing: border-box;
+   color: #fff;
+   cursor: pointer;
+   display: inline-block;
+   font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+   font-size: 10.5px;
+   font-weight: 500;
+   line-height: 20px;
+   margin: 10px 0px 20px 0px;
+   overflow: visible;
+   padding: 8px 8px;
+   text-align: center;
+   width: 95px;
+}
+
+
+/* Back-in-time Buttons */
+.moveButton {
+   background-color: #000;
+   background-image: none;
+   border: 1px solid #000;
+   border-radius: 4px;
+   box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+   box-sizing: border-box;
+   color: #fff;
+   cursor: pointer;
+   display: inline-block;
+   font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+   font-size: 11px;
+   font-weight: 500;
+   line-height: 20px;
+   margin: 0 5px 10px 0;
+   overflow: visible;
+   padding: 4px 12px;
+   text-align: center;
+   text-transform: none;
+   touch-action: manipulation;
+   user-select: none;
+   -webkit-user-select: none;
+   vertical-align: middle;
+   white-space: nowrap;
+   max-width: 100px;
+}
+
+.moveButton:focus {
+   text-decoration: none;
+}
+
+.moveButton:hover {
+   text-decoration: none;
+}
+
+.moveButton:active {
+   box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+   outline: 0;
+}
+
+.moveButton:not([disabled]):active {
+   box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+   transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+   .moveButton {
+      padding: 12px 10px;
+      box-sizing: border-box;
+   }
+}
+
+
+/* X/O Counters */   
+.moveCounter {
+   flex-direction: column;
+   max-width: 100px;
+}
+
+.counterOne {
+   background-color: #000;
+   background-image: none;
+   border: 1px solid #000;
+   border-radius: 4px;
+   box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+   box-sizing: border-box;
+   color: #fff;
+   cursor: pointer;
+   display: inline-block;
+   font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+   font-size: 10.5px;
+   font-weight: 500;
+   line-height: 20px;
+   margin: 20 0px 0px 0px;
+   overflow: visible;
+   padding: 8px 8px;
+   text-align: center;
+}
+
+.counterTwo {
+   background-color: #000;
+   background-image: none;
+   border: 1px solid #000;
+   border-radius: 4px;
+   box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+   box-sizing: border-box;
+   color: #fff;
+   cursor: pointer;
+   display: inline-block;
+   font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+   font-size: 10.5px;
+   font-weight: 500;
+   line-height: 20px;
+   margin: 0px;
+   overflow: visible;
+   padding: 8px 8px;
+   text-align: center;
+}
+
+
+/* Game Status Draw */
+.statusDraw {
+   margin-left: 20px;
+   margin-top: 7px;
+   font-size: 15px;
+}
+
+.statusDrawActive {
+   background-color: #000;
+   background-image: none;
+   border: 1px solid #000;
+   border-radius: 4px;
+   box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+   box-sizing: border-box;
+   color: #fff;
+   cursor: pointer;
+   display: inline-block;
+   font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+   font-size: 10.5px;
+   font-weight: 500;
+   line-height: 20px;
+   margin: 0px 0px 0px 35px;
+   overflow: visible;
+   padding: 8px 8px;
+   text-align: center;
+}
